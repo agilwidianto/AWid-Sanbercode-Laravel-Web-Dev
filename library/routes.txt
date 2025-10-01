@@ -1,0 +1,41 @@
+
+  GET|HEAD        / ...................................................................... home › HomeController@index
+  POST            books ........................................................... books.store › BookController@store
+  GET|HEAD        books ........................................................... books.index › BookController@index
+  GET|HEAD        books/create .................................................. books.create › BookController@create
+  PUT|PATCH       books/{book} .................................................. books.update › BookController@update
+  DELETE          books/{book} ................................................ books.destroy › BookController@destroy
+  GET|HEAD        books/{book} ...................................................... books.show › BookController@show
+  POST            books/{book}/comments ..................................... comments.store › CommentController@store
+  DELETE          books/{book}/comments/{comment} ....................... comments.destroy › CommentController@destroy
+  GET|HEAD        books/{book}/edit ................................................. books.edit › BookController@edit
+  GET|HEAD        confirm-password ........................ password.confirm › Auth\ConfirmablePasswordController@show
+  POST            confirm-password .......................................... Auth\ConfirmablePasswordController@store
+  GET|HEAD        dashboard ................................................................................ dashboard
+  POST            email/verification-notification verification.send › Auth\EmailVerificationNotificationController@st…
+  GET|HEAD        forgot-password ......................... password.request › Auth\PasswordResetLinkController@create
+  POST            forgot-password ............................ password.email › Auth\PasswordResetLinkController@store
+  POST            genres ........................................................ genres.store › GenreController@store
+  GET|HEAD        genres ........................................................ genres.index › GenreController@index
+  GET|HEAD        genres/create ............................................... genres.create › GenreController@create
+  PUT|PATCH       genres/{genre} .............................................. genres.update › GenreController@update
+  DELETE          genres/{genre} ............................................ genres.destroy › GenreController@destroy
+  GET|HEAD        genres/{genre} .................................................. genres.show › GenreController@show
+  GET|HEAD        genres/{genre}/edit ............................................. genres.edit › GenreController@edit
+  GET|HEAD        login ........................................... login › Auth\AuthenticatedSessionController@create
+  POST            login .................................................... Auth\AuthenticatedSessionController@store
+  POST            logout ........................................ logout › Auth\AuthenticatedSessionController@destroy
+  PUT             password .......................................... password.update › Auth\PasswordController@update
+  POST            profile .................................................. profile.upsert › ProfileController@upsert
+  GET|HEAD        profile/edit ................................................. profile.edit › ProfileController@edit
+  GET|HEAD        register ........................................... register › Auth\RegisteredUserController@create
+  POST            register ....................................................... Auth\RegisteredUserController@store
+  POST            reset-password ................................... password.store › Auth\NewPasswordController@store
+  GET|HEAD        reset-password/{token} .......................... password.reset › Auth\NewPasswordController@create
+  GET|HEAD        storage/{path} ....................................................................... storage.local
+  GET|HEAD        up ................................................................................................. 
+  GET|HEAD        verify-email .......................... verification.notice › Auth\EmailVerificationPromptController
+  GET|HEAD        verify-email/{id}/{hash} .......................... verification.verify › Auth\VerifyEmailController
+
+                                                                                                   Showing [37] routes
+
